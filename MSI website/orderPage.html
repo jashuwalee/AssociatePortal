@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Furūtsu</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="orderPage.css">
+        <link rel="stylesheet" href="/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="animate__animated animate__fadeInDown">
+            <div class="topnav">
+                <ol>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="#CART" id="otherNav"><button type="button"  data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart"></i><span class="total-count"></span></button></a></li>   
+                <li><a href="#SEARCH" id="otherNav"><i class="fas fa-search"></i></a></li> 
+                <li><a href="#CONTACT" id="otherNav">contact</a></li>
+                <li><a href="#PRODUCTS" id="otherNav">catalog</a></li>  
+                </ol>
+            </div>
+        </div>
+        <div class="Checkout">
+            <div class="row">
+                <div class="col-75">
+                    <div class="container">
+                    <form action="/action_page.php">
+                    
+                        <div class="row">
+                        <div class="col-50">
+                            <h3>Buisness Card Info</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"><i class="fa fa-address-card-o"></i>Branch Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city"><i class="fa fa-institution"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="California">
+                
+                            <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="CA">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="90210">
+                            </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                    </form>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="container">
+                    <h4>Cart <span class="total-count"><i class="fa fa-shopping-cart"></i></span></h4>
+                    <table class="show-cart table">
+                        
+                    </table>
+                        <div>Total price: $<span class="total-cart"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                    <table class="show-cart table">
+                        
+                    </table>
+                        <div>Total price: $<span class="total-cart"></span></div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary"><a href="orderPage.html">Order now</a></button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+                <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <ol>
+                    <li><a href="#SEARCH">search</a></li>
+                    <li><a href="#CONTACT">contact</a></li>
+                </ol>
+            </div> 
+        </footer>
+        <script src="index.js"></script>
+    </body>
