@@ -6,70 +6,30 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    overflow-x: hidden;
 }
 
-.topnav {
-    
-    /* background-color: #333; */
-}
-.topnav a{
-    float: left;
-    color: #8b6f4e;
-    text-align: center;
-    padding: 14px 16px;
+a {
     text-decoration: none;
-    font-size: 25px;
-}
-
-#otherNav {
-    float: right;
-    color: #8b6f4e;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-/* .topnav a:hover {
-    background-color: #ddd;
     color: black;
-} */
-
-ol {
-    list-style-type: none;
 }
-ol li{
-    float: inline-start;
-    
-}
-ol li a{
-    color: #8b6f4e;
-    text-decoration: none;
-}
-ol li a .btn{
-    padding: 0;
+button{
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     border: none;
-    background: none;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
-}
-
-.innerContent{
-    position: relative;
-    top: 50px;
-    left: 50px;
-    width: 500px;
-    color: #8b6f4e;
-
-}
-.innerContent h2{
-    text-align: left;
+    border-radius:10px;
+    background: white;
 
 }
 
-.innerContent p{
-    text-align: left;
-    --animate-delay: 0.1s;
+button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+button:active {
+    background: #e5e5e5;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
 }
 /* The Modal (background) */
 .modal {
@@ -88,7 +48,7 @@ ol li a .btn{
 }
 
 /* Modal Content */
-.modal-content1 {
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
@@ -130,26 +90,11 @@ ol li a .btn{
     width: 40%;
 }
 
-.items button{
+button{
     width: 195px;
     height: 155px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border: none;
-    border-radius:10px;
-    background: white;
-
 }
 
-.items button:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.items button:active {
-    background: #e5e5e5;
-    box-shadow: inset 0px 0px 5px #c1c1c1;
-    outline: none;
-}
 .wordContainer{
     padding: 2px 16px;
     text-align: center;
@@ -165,30 +110,13 @@ ol li a .btn{
     color: #8b6f4e;
 }
 
-.wordContainer a{
-    text-decoration: none;
-    color: black;
-        
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
-.modal-footer button a{
-    color: black;
-    text-decoration: none;
-}
-footer{
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    background-color: #8b6f4e;
-}
-
-footer ol li a {
-    color: white;
-}
-.show-cart li {
-    display: flex;
-  }
-
-  .dropbtn {
+.dropbtn {
     background-color: #8b6f4e;
     color: white;
     padding: 16px;
@@ -197,13 +125,7 @@ footer ol li a {
     max-width: 150px;
     max-height: 50px;
 }
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-}
- 
+  
 .dropdown {
 position: relative;
 display: inline-block;
@@ -235,3 +157,6 @@ flex-direction: column;
 }
 
 .dropdown:hover .dropbtn {background-color: #7a6144;}
+
+
+

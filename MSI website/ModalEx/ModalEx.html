@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ModalEx.css">
+    </head>
+    <body>
+        <h2>Modal Example</h2>
+        <div class="container">
+          <div class="items">
+            <button id="myBtn">               
+              <img src="banana.jpg">
+                <div class="wordContainer">
+                  <h4><b>Shirts</b></h4>
+                  <p>$20.00</p>
+                </div>
+            </button>
+          </div>
+          <div class="items">
+            <button id="myBtn2">               
+              <img src="banana.jpg">
+                <div class="wordContainer">
+                  <h4><b>Shirts</b></h4>
+                  <p>$20.00</p>
+                </div>
+            </button>
+          </div>     
+        </div>     
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="banana.jpg">
+              <div class="wordContainer">
+                <h4><b>Shirts</b></h4>
+                <p>$20.00</p>
+                <p>Quantity-1</p>
+                <div class="dropdown">
+                  <button class="dropbtn">Sizes</button>
+                  <div class="dropdown-content">
+                    <a href="#">Small</a>
+                    <a href="#">Medium</a>
+                    <a href="#">large</a>
+                  </div>
+                </div>                
+              </div>
+          </div>       
+        </div>
+        
+        <script src="ModalEx.js" async defer></script>
+    </body>
+</html>

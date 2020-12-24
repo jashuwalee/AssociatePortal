@@ -13,6 +13,9 @@
         <link rel="stylesheet" href="/css/all.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
     </head>
@@ -36,82 +39,26 @@
             <h2 class="animate__animated animate__fadeInLeft">MS International</h2>
             <p class="animate__animated animate__fadeInLeft animate__delay-1s">Associate Portal</p>            
         </div>
-        <div class="container">
-            <div class="items">
-                <button id="myBtn1">               
-                    <img src="banana.jpg">
-                      <div class="wordContainer">
-                        <h4><b>Shirts</b></h4>
-                        <p>$20.00</p>
-                      </div>
-                </button>
-            </div>
-            <div class="items">
-                <button id="myBtn2">               
-                    <img src="banana.jpg">
-                      <div class="wordContainer">
-                        <h4><b>Buisness Cards</b></h4>
-                        <p>$20.00 - $100.00</p>
-                      </div>
-                </button>
-            </div>
-                
-
-
-                <!-- <div data-name="BusinessCards" data-price="400" class="itemCard">                
-                    <img src="bananaFlip.jpg">
-                    <div class="wordContainer">
-                        <h4><b>Business Cards</b></h4>
-                        <p>$400.00</p>
-                        <p>Quantity-500</p>
-                        <a href="#" data-name="BusinessCards" data-price="400" class="add-to-cart btn btn-primary">Add to cart</a>
-                    </div>
-                </div> -->
-        </div>
-
-        <!-- The Modal shirts -->
-        <div id="myModal1" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content1">
-                <span id="close1" class="close">&times;</span>
+        <div class="items">
+            <div data-name="Shirts" data-price="20" class="itemCard">                
                 <img src="banana.jpg">
-                <div class="wordContainer">
+                <div class="container">
                     <h4><b>Shirts</b></h4>
                     <p>$20.00</p>
                     <p>Quantity-1</p>
-                    <div class="dropdown">
-                    <button class="dropbtn">Sizes</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-name="smallShirt" data-price="20" class="add-to-cart btn btn-primary">Small</a>
-                        <a href="#" data-name="mediumShirt" data-price="20" class="add-to-cart btn btn-primary">Medium</a>    
-                        <a href="#" data-name="largeShirt" data-price="20" class="add-to-cart btn btn-primary">Large</a>
-                    </div>
-                    </div>                
+                    <a href="#" data-name="Shirts" data-price="20" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
-            </div>       
-        </div>
-
-        <!-- The Modal Buisness Cards -->
-        <div id="myModal2" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content1">
-                <span id="close2" class="close">&times;</span>
-                <img src="banana.jpg">
-                <div class="wordContainer">
+            </div>
+            <div data-name="BusinessCards" data-price="400" class="itemCard">                
+                <img src="bananaFlip.jpg">
+                <div class="container">
                     <h4><b>Business Cards</b></h4>
-                    <p>$20.00 - $100.00</p>
-                    <p>Quantity-1</p>
-                    <div class="dropdown">
-                    <button class="dropbtn">Quantity</button>
-                    <div class="dropdown-content">
-                        <a href="#" data-name="100" data-price="20" class="add-to-cart btn btn-primary">100</a>
-                        <a href="#" data-name="500" data-price="100" class="add-to-cart btn btn-primary">500</a>
-                    </div>
-                    </div>                
+                    <p>$400.00</p>
+                    <p>Quantity-500</p>
+                    <a href="#" data-name="BusinessCards" data-price="400" class="add-to-cart btn btn-primary">Add to cart</a>
                 </div>
-            </div>       
+            </div>
         </div>
-        
         <!-- Modal -->
         <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -134,12 +81,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
-
-          
-
-
+        </div> 
                 <!-- Footer -->
         <footer>
             <div class="footer">
@@ -149,10 +91,6 @@
                 </ol>
             </div> 
         </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         <script src="index.js"></script>
-        <script src="WModal.js"></script>
     </body>
 </html>
